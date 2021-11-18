@@ -35,6 +35,7 @@ const TodoList = () => {
 
   const handleDelete = (id: any) => {
     // Fix an ability to delete task
+    setTodos(todos.filter(todo => todo.id !== id));
   };
 
   const toggleCheck = (id: any) => {

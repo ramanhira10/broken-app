@@ -1,6 +1,5 @@
 import { styled } from "@mui/material/styles";
 import * as React from "react";
-import "./checkbox.scss";
 
 const Container = styled("div")({
   display: "flex",
@@ -42,7 +41,7 @@ const Label = styled("span", {
   textDecoration: checked ? "line-through" : "none",
 }));
 
-const Checkbox = ({ onClick, checked, onDelete, label, onKeyUp }) => (
+const Checkbox = ({ onClick, checked, onDelete, label, onKeyUp }: any) => (
   <Container>
     <Content
       tabIndex="0"

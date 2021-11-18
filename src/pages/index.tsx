@@ -1,6 +1,9 @@
 import { styled } from "@mui/material/styles";
 import type { NextPage } from "next";
 import React, { useState } from "react";
+import TodoForm from "../components/TodoForm/TodoForm";
+import TodoList from "../components/TodoList/TodoList";
+import TodoResults from "../components/TodoResults/TodoResults";
 import { TodosContext } from "../TodoContext";
 
 const tasks = [

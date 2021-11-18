@@ -1,7 +1,6 @@
 import { styled } from "@mui/material/styles";
 import * as React from "react";
 import { TodosContext } from "../../TodoContext";
-import "./todo-form.scss";
 
 const Container = styled("div")({
   display: "flex",
@@ -36,7 +35,7 @@ const TodoForm = () => {
     // Fin an ability to add new task
   };
 
-  const handleKeyUp = (e) => {
+  const handleKeyUp = (e: any) => {
     if (e.keyCode === 13) {
       handleAddTodo();
     }

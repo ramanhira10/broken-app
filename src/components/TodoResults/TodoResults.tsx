@@ -1,6 +1,5 @@
 import { styled } from "@mui/material/styles";
 import * as React from "react";
-import "./todo-results.scss";
 
 const Container = styled("div")({
   fontWeight: 500,

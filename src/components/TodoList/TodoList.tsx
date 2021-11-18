@@ -1,6 +1,5 @@
 import * as React from "react";
 import { TodosContext } from "../../TodoContext";
-import "./todo-list.scss";
 import { styled } from "@mui/material/styles";
 import Checkbox from "../Checkbox/Checkbox";
 
@@ -33,15 +32,15 @@ const NoToDos = styled("div")({
 const TodoList = () => {
   const { todos, setTodos } = React.useContext(TodosContext);
 
-  const handleDelete = (id) => {
+  const handleDelete = (id: any) => {
     // Fix an ability to delete task
   };
 
-  const toggleCheck = (id) => {
+  const toggleCheck = (id: any) => {
     // Fix an ability to toggle task
   };
 
-  const handleKeyUp = (e, id) => {
+  const handleKeyUp = (e: any, id: any) => {
     if (e.keyCode === 13) {
       toggleCheck(id);
     }

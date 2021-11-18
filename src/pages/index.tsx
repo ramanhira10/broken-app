@@ -44,7 +44,7 @@ const Container = styled("div")({
 });
 
 const Home: NextPage = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(tasks);
 
   return (
     <Container>

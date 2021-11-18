@@ -33,6 +33,15 @@ const TodoForm = () => {
 
   const handleAddTodo = () => {
     // Fin an ability to add new task
+
+    if (task !== '') {
+
+      setTodos([...todos, {
+        id: todos.length,
+        label: task,
+        checked: false
+      }]);
+    }
   };
 
   const handleKeyUp = (e: any) => {

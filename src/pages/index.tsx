@@ -48,7 +48,7 @@ const Home: NextPage = () => {
 
   return (
     <Container>
-      <TodosContext.Provider value={{ todos }}>
+      <TodosContext.Provider value={{ todos, setTodos }}>
         <TodoList />
         <TodoResults />
         <TodoForm />

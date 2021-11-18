@@ -9,7 +9,8 @@ const Container = styled("div")({
 });
 const Content = styled("div")({
   display: "flex",
-  justifyContent: "center",
+  flexDirection: 'column',
+  justifyContent: "center"
 });
 const Title = styled("span")({
   fontWeight: 500,
